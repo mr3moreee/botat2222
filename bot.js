@@ -8,7 +8,7 @@ var Canvas = require('canvas');
 var jimp = require('jimp');
 const prefix = "*";
 const devs = ['462006869834203159' , '' , '' , ''];
-const adminprefix = "#";
+const adminprefix = "*";
 
 client.on('ready', () => {
     console.log('I am ready!');
@@ -21,14 +21,14 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers ' Script By : n3k4a  Codes ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`#help-js | #help2 | #تقديم `,"http://twitch.tv/S-F")
+client.user.setGame(`Family Sever`,"http://twitch.tv/S-F")
 client.user.setStatus("dnd")
  
 });
 
 
 client.on('message', msg => {
-	var  prefix = "#";
+	var  prefix = "*";
  if (msg.content.startsWith(prefix + 'cal')) {
     let args = msg.content.split(" ").slice(1);
         const question = args.join(' ');
@@ -169,7 +169,7 @@ client.on('message', msg => {
 
 const hastebin = require('hastebin-gen');
 client.on('message', message => {
-var PREFIX = '#';
+var PREFIX = '*';
     if(message.content.startsWith(PREFIX + 'dis')) {
             var args = message.content.split(' ').slice(1).join(' ');
 }
